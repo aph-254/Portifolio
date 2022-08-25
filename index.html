@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>K.R. Kinyanjui personal portfolio website </title>
+	<link rel="stylesheet" type="text/css" href="../Style/style.css">
+
+	<link rel="stylesheet"
+	href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,500;0,600;1,400;1,700&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body onload=todayDate()>
+
+
+	<!-------header---->
+	<header>
+		<a href="#" class="logo"><img src="../images/logan.jpg"></a>
+		<a href="../images/CURRICULUM VITAE.docx" class="top-btn"download><img src="../images/download.png">Download My Curriculum Vitae</a>
+	</header>
+		<nav>
+			<ul class="navlist">
+				<li><a href="#Home">Home</a></li>
+				<li><a href="#About">About</a></li>
+				<li><a href="#Services">Services</a></li>
+				<li><a href="#Contacts">Contacts</a></li>
+			</ul>
+		</nav>
+	<!-----home--->
+	<section class="Home" id="Home">
+		<div class="Home-text">
+			<h3>Hi, I'm</h3>
+			<hr>
+			<h1>K.R. Kinyanjui</h1>
+			<h5>An Electrical and Electronic Student <span>from JKUAT</span></h5>
+			<p>Seeking a dynamic new role as an Electrical and Electronic Engineer? Then here he is...</p>
+			<div class="social">
+				<a href="https://wa.me/[+254794899825]"target="_blank" rel="noopener"><img src="../images/whatsapp.png"></a>
+				<a href="https://www.facebook.com/ras.haphoun.9"target="_blank" rel="noopener"><img src="../images/facebook.png"></a>
+				<a href=""><img src="../images/twitter.png"></a>
+				<a href="#"><img src="../images/linkedin.png"></a>
+			</div>
+			<button><a href="#" class="btn"> Learn More</a></button>
+		</div>
+
+		<div class="home-img">
+			<img src="../images/raphi.jpg" height="300" width="300" alt>
+			
+		</div>
+	</section>
+	
+
+	<!-------Link to js---->
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<section class="My-projects" id="Services">
+		<h3>My Projects</h3>
+		<div class="projects">
+			<div class="Samples">
+				<div class="engineering-projects">
+					<h3>Micro-Electronic Controllers</h3>
+					<p>Ongoing learning and projects on:
+						Arduino,
+					Raspberry pi,and ESP32</p>
+						<button><a href="../images/arduino.jpg"target="_blank">View My Project</a></button>
+				</div>
+			</div>
+			<div class="Samples">
+				<div class="engineering-projects">
+					<h3>Electrical Installation</h3>
+					<p>Amazon Web Services offers cloud web hosting solutions that provide businesses, non-profits, and governmental organizations with low-cost ways to deliver their websites and web applications. Whether you’re looking for a marketing, rich-media, or ecommerce website, AWS offers a wide-range of website hosting 
+						options, and we’ll help you select the one that is right for you.</p>
+						<button><a href="../images/markus-spiske-kK7uPfb2YWU-unsplash.jpg"target="_blank">View My Project</a></button>
+				</div>
+			</div>
+			<div class="Samples">
+				<div class="engineering-projects">
+					<h3>Micro-Electronic Controllers</h3>
+					<p>Amazon Web Services offers cloud web hosting solutions that provide businesses, non-profits, and governmental organizations with low-cost ways to deliver their websites and web applications. Whether you’re looking for a marketing, rich-media, or ecommerce website, AWS offers a wide-range of website hosting 
+						options, and we’ll help you select the one that is right for you.</p>
+						<button><a href="../images/markus-spiske-kK7uPfb2YWU-unsplash.jpg"target="_blank">View My Project</a></button>
+				</div>
+				
+			</div>
+			<div class="Samples">
+				<div class="engineering-projects">
+					<h3>Electrical</h3>
+					<p>Amazon Web Services offers cloud web hosting solutions that provide businesses, non-profits, and governmental organizations with low-cost ways to deliver their websites and web applications. Whether you’re looking for a marketing, rich-media, or ecommerce website, AWS offers a wide-range of website hosting 
+						options, and we’ll help you select the one that is right for you.</p>
+						<button><a href="../images/markus-spiske-kK7uPfb2YWU-unsplash.jpg"target="_blank">View My Project</a></button>
+				</div>
+			</div>
+			<div class="Samples">
+
+				<div class="engineering-projects">
+					<p>Amazon Web Services offers cloud web hosting solutions that provide businesses, non-profits, and governmental organizations with low-cost ways to deliver their websites and web applications. Whether you’re looking for a marketing, rich-media, or ecommerce website, AWS offers a wide-range of website hosting 
+						options, and we’ll help you select the one that is right for you.</p>
+						<button><a href="../images/markus-spiske-kK7uPfb2YWU-unsplash.jpg"target="_blank">View My Project</a></button>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section class="Reach Me" id="Contacts">
+		<h3>Reach Me</h3>
+		<p>phone number +254794899825
+			<p>Email: raphaelkinyanjui06@gmail.com</p></p>
+	</section>
+
+<footer>
+	&copy; <em id="date"></em>KR Kinyanjui
+</footer>
+	<script src="../script/vanilla-tilt.js"></script>
+	<script type="text/javascript">
+		VanillaTilt.init(document.querySelectorAll(".Samples"), {
+			max: 25,
+			speed: 400,
+			glare: false,
+			"max-glare":1,
+	
+		});
+		
+		//It also supports NodeList
+		VanillaTilt.init(document.querySelectorAll(".desc"));
+	</script>
+	<script>
+		function todayDate(){
+		   var d = new Date();
+		   var n = d.getFullYear() + "  ";
+		   return document.getElementById("date").innerHTML = n;
+		 }
+	  </script>
+</body>
+</html>
